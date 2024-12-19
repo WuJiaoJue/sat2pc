@@ -47,7 +47,7 @@ class Sat2LidarNetwork(nn.Module):
         self.pc_num = pc_num
         self.graphx = graphx_model
         self.res = PointNetRes()
-        self.decive = device
+        self.device = device
 
     def forward(self, init_pc, grey_images, targets=None):
 
